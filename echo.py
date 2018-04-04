@@ -1,5 +1,4 @@
 
-
 import pickle
 
 file=open('../cred','rb')
@@ -26,16 +25,16 @@ def get_url(Url):
 
 
 
-# def getupdates(offset=None):
-# 	url=URL+"getUpdates?timeout=10"
-# 	if offset:
-# 		url=url+"&offset="+str(offset)
-# 	response=get_url(url)
-# 	return response
+def getupdates(offset=None):
+	url=URL+"getUpdates?timeout=10"
+	if offset:
+		url=url+"&offset="+str(offset)
+	response=get_url(url)
+	return response
 	
-# def echoall(updateall):
-# 	for update in updateall['result']:
-# 		send_message(urllib.parse.quote_plus(update['message']['text']),update['message']['chat']['id'])
+def echoall(updateall):
+	for update in updateall['result']:
+		send_message(urllib.parse.quote_plus(update['message']['text']),update['message']['chat']['id'])
 
 
 def send_message(text,chatid):
