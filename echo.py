@@ -62,7 +62,7 @@ def main():
 	# 	if len(update['result'])>0:
 	# 		echoall(update)
 	# 		last_update_id=update['result'][len(update['result'])-1]['update_id']+1
-	# 	time.sleep(10)
+	# 	time.sleep(5)
 	rel_val,hdfc_val=find_values()
 	hdfc_units=1133.376
 	hdfc_amount=round(hdfc_val*hdfc_units,4)
