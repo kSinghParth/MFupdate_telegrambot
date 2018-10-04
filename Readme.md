@@ -1,2 +1,1 @@
-A simple telegram bot which sends a message about the value of two stocks HDFC Small Caps and Reliance TOP 200 in real time.
-Uses selenium for web scrapping.
+A simple telegram bot which sends a message about the value of two stocks HDFC Small Caps and Reliance TOP 200 in real time using selenium for web scrapping. It then sends the values along with other stats(number of shares bought, profit, etc) as a message on telegram using the telegram api.
